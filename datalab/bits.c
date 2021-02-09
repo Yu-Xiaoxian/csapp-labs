@@ -164,7 +164,7 @@ int tmin(void) {
  *   Rating: 1
  */
 int isTmax(int x) {
-  int max = -1u >> 1;
+  int max = ~tmin();
   return !(max ^ x);
 }
 /* 
